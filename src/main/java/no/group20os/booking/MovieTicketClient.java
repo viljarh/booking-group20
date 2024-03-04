@@ -1,9 +1,12 @@
 package no.group20os.booking;
 
 public class MovieTicketClient extends Thread {
-    public MovieTicketClient(){
-        public void run() {
-
-        }
+    //TODO
+    public MovieTicketClient() {
+        //TODO
     }
+        public void run() {
+               //TODO
+        }
+                     
 }
