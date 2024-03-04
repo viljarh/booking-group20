@@ -10,7 +10,7 @@ public class MovieTicketServer {
     }
 
     public synchronized void bookTicket(String customerName, int numberOfSeats) {
-        System.out.println("Hello" + customerName + " : " + availableSeats + " : Seats available for " + movieName);
+        System.out.println("Hello! " + customerName + " : " + availableSeats + " Seats available for " + movieName);
 
         if (availableSeats < numberOfSeats) {
             System.out.println("Hello" + customerName + " : Seats not available for " + movieName);
