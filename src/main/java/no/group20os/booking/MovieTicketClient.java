@@ -1,12 +1,20 @@
 package no.group20os.booking;
 
 public class MovieTicketClient extends Thread {
-    //TODO
-    public MovieTicketClient() {
-        //TODO
+    private String customerName;
+    private int numberOfSeats;
+    private MovieTicketServer server;
+
+    public MovieTicketClient(MovieTicketServer server, String customerName, int numberOfSeats) {
+        this.server = server;
+        this.customerName = customerName;
+        this.numberOfSeats = numberOfSeats;
+
     }
-        public void run() {
-               //TODO
-        }
-                     
+
+    @Override
+    public void run() {
+        server.bookTicket(customerName, numberOfSeats);
+    }
+
 }
